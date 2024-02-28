@@ -7,5 +7,4 @@ int validation(char* input);
 int rd_input(char* user_guess);
 int is_correct(int well_placed);
 void prnt_res(int well_placed, int misplaced);
-
 #endif
