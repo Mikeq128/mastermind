@@ -20,7 +20,6 @@ void guess(char* gues, char* scrt_cd, int* well_plcd, int* misplcd) {
             secret_hist[scrt_cd[i] - '0']++;
         }
     }
-
     for (int i = 0; i < 10; i++) {
         if (secret_hist[i] < gues_hist[i]) {
             *misplcd += secret_hist[i];
@@ -29,7 +28,6 @@ void guess(char* gues, char* scrt_cd, int* well_plcd, int* misplcd) {
         }
     }
 }
-
 char* randit(char* random_code) {
     const char num[] = "0123456789";
     for (int i = 0; i < CD_LEN; i++) {
@@ -38,7 +36,6 @@ char* randit(char* random_code) {
     random_code[CD_LEN] = '\0';
     return random_code;
 }
-
 int validation(char* input) {
     if (strlen(input) != CD_LEN) return 0;
     for (int i = 0; i < CD_LEN; i++) {
