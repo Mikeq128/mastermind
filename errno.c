@@ -12,7 +12,6 @@ int rd_input(char* gues) {
     }
     return 0;
 }
-
 int is_correct(int well_placed) {
     if (well_placed == 4) {
         printf("Congratz! You guessed it right!\n");
@@ -20,7 +19,6 @@ int is_correct(int well_placed) {
     }
     return 0;
 }
-
 void prnt_res(int well_placed, int misplaced) {
     printf("Well placed pieces: %d\nMisplaced pieces: %d\n", well_placed, misplaced);
 }
